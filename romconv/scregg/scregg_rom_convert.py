@@ -31,7 +31,7 @@ SCREGG_FILES = {
   "gfx1_5":    {"names": ["d90.g12"], "sha1": "0da866db6a79f658de3efc609b9ca8520b4d22d0"},
   "gfx1_6":    {"names": ["da0.g10"], "sha1": "e01b72501a01ffc0370cf19c9a379a54800cccc6"},
 
-  "prom1":     {"names": ["dc0.c6"], "sha1": "d09738915da456449bb4e8d9eefb8e6378f0edea"}, # pallete
+  "prom1":     {"names": ["dc0.c6"], "sha1": "d09738915da456449bb4e8d9eefb8e6378f0edea"}, # palette
   "prom2":     {"names": ["db1.b4"], "sha1": "2a283fc17fac32e63385948bfe180d05f1fb8727"}, # unused
 }
 
@@ -190,7 +190,6 @@ def convert_scregg(romset, files):
     print("ERROR: Not all files have been loaded")
     sys.exit(1)
     return
-
 
   gfx1 = gfx1_1 + gfx1_2 + gfx1_3 + gfx1_4 + gfx1_5 + gfx1_6
   assert len(gfx1) == 0x6000

@@ -383,7 +383,7 @@ void burgertime::blit_bg_tile(short row, int idx) {
 // senza serve un layer pixel-preciso separato (il carattere e' comunque
 // sulla stessa griglia da 8px).
 static inline bool burgertime_is_ingredient_char(unsigned short code) {
-  return code >= 512 && code <= 863;
+  return ((code < 336) || (code >= 512 && code <= 895));
 }
 
 void burgertime::blit_tile(short row, char col) {
